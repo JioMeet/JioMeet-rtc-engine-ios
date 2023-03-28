@@ -8,11 +8,8 @@ let package = Package(
     defaultLocalization: "en",
     platforms: [.iOS(.v12)],
     products: [
-        .library(name: "RtcBasic", targets: ["JioMeetCore","JioMeetfdkaac","JioMeetffmpeg","JioMeetRtcEngineKit","JioMeetSoundTouch"]), 
-        .library(name: "AINS", targets: ["JioMeetAIDenoiseExtension"]), 
-        .library(name: "ContentInspect", targets: ["JioMeetCIExtension"]), 
-        .library(name: "VideoPreprocess", targets: ["JioMeetVideoProcessExtension"]), 
-        .library(name: "VirtualBackground", targets: ["JioMeetVideoSegmentationExtension"]), 
+        .library(name: "RTC", targets: ["JioMeetCore","JioMeetfdkaac","JioMeetffmpeg","JioMeetRtcEngineKit","JioMeetSoundTouch","JioMeetAIDenoiseExtension","JioMeetCIExtension","JioMeetVideoProcessExtension","JioMeetVideoSegmentationExtension"])
+        .library(name: "RTM", targets: ["JioMeetRtmKit"]), 
     ],
     targets: [
         .binaryTarget(
@@ -59,6 +56,11 @@ let package = Package(
             name: "JioMeetVideoSegmentationExtension",
             url: "https://storage.googleapis.com/cpass-sdk/JioMeet_RTC_Engine_iOS/Frameworks/3_7_1/JioMeetVideoSegmentationExtension.xcframework.zip",
             checksum: "0f339d933389e42c5147f04ebcbfeb9e94257665928c66c0ec2f4146f9f8bd29"
+        ),
+        .binaryTarget(
+            name: "JioMeetRtmKit",
+            url: "https://storage.googleapis.com/cpass-sdk/libs/iOS/public/rtm_kit/1_5_1/JioMeetRtmKit.xcframework.zip",
+            checksum: "5b69b6d1b4fb0731d7d223bb5936499000867376c39668356e07b95eb5c9b056"
         ),
     ]
 )
