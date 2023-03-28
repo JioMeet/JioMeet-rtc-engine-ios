@@ -8,7 +8,7 @@ let package = Package(
     defaultLocalization: "en",
     platforms: [.iOS(.v12)],
     products: [
-        .library(name: "RTC", targets: ["JioMeetCore","JioMeetfdkaac","JioMeetffmpeg","JioMeetRtcEngineKit","JioMeetSoundTouch","JioMeetAIDenoiseExtension","JioMeetCIExtension","JioMeetVideoProcessExtension","JioMeetVideoSegmentationExtension"])
+        .library(name: "RTC", targets: ["JioMeetCore","JioMeetfdkaac","JioMeetffmpeg","JioMeetRtcEngineKit","JioMeetSoundTouch","JioMeetAIDenoiseExtension","JioMeetCIExtension","JioMeetVideoProcessExtension","JioMeetVideoSegmentationExtension"]),
         .library(name: "RTM", targets: ["JioMeetRtmKit"]), 
     ],
     targets: [
